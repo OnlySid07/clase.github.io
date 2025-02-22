@@ -6,15 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="mensaje" style="font-size: 30px;"></div>
-    <div id="resultado" style="font-size: 30px;"></div>
+    <div id="resultado"></div>
+    
     <script>
-        var mensaje = "Bienvenido Certus";
-        document.getElementById("mensaje").innerHTML = mensaje;
-        var valor1 = 10;
-        var valor2 = 20;
-        var resultado = valor1 + valor2;
-        document.getElementById("resultado").innerHTML = resultado;
+        var numero = 10;
+        var numero2 = 20;
+        var suma = numero + numero2;
+        var multiplicar = numero * numero2;
+        var dividir = numero / numero2;
+        var restar = numero - numero2;
+        var nombre = "Josue";
+        document.getElementById("resultado").innerHTML = "La suma es: " + suma + 
+        "<br>" + "La multiplicación es: " + 
+        multiplicar + "<br>" + "La división es: " + 
+        dividir + "<br>" + "La resta es: " + 
+        restar + "<br>" + "Hola mi nombre es: " + 
+        nombre;
+
+        /*
+Crearemos 3 variables adicionales a la que tenemos
+Variable multiplicar,dividir y restar, donde realizaremos las operaciones
+Luego crearan una variable con su nombre en texto
+y lo mostrarán como un saludo
+*/
     </script>
     
 </body>
