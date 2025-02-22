@@ -6,17 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Certus</h1>
-
-    <p id="mensaje" style="color: red;">Este es un parrafo</p>
-
+    <div id="mensaje" style="font-size: 30px;"></div>
+    <div id="resultado" style="font-size: 30px;"></div>
     <script>
-        var texto="Alerta pero de una variable"
-        document.getElementById('mensaje').innerHTML = 'CERTUS';
-        document.write("<h2 style='color: blue;'>Certus pero azulito</h2>");
-        window.alert('Certus pero en alerta');
-        window.alert(texto);
-        console.log('Certus pero en consola');
+        var mensaje = "Bienvenido Certus";
+        document.getElementById("mensaje").innerHTML = mensaje;
+        var valor1 = 10;
+        var valor2 = 20;
+        var resultado = valor1 + valor2;
+        document.getElementById("resultado").innerHTML = resultado;
     </script>
     
 </body>
