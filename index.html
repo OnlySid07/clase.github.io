@@ -6,16 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="mensaje"></div>
-    <div id="resultado"></div>
+    <div>
+        <h1>Prueba de edad</h1>
+        <p>Ingresa tu edad</p>
+        <input type="number" id="edad" name="edad">
+        <button onclick="calcular()">Calcular</button>
+    </div>
     <script>
-        var _valor1=10;
-        var $valor2=20;
-        var resultado=_valor1+$valor2;
-        document.getElementById("mensaje").innerHTML="El resultado de la suma de "
-        +_valor1+" y "+$valor2+" es: " + resultado;	    
-        var nombreInstituto="Certus";
-        document.getElementById("resultado").innerHTML="El nombre del instituto es: "+nombreInstituto;
+        //Si es mayor de edad mostrar un mensaje ingresando mi edad
+        function calcular(){
+            var edad = document.getElementById('edad').value;
+            if(edad >= 18){
+                alert('Eres mayor de edad');
+            }else{
+                alert('Eres menor de edad');
+            }
+        }
     </script>
+    
 </body>
 </html>
