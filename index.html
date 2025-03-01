@@ -6,23 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>Prueba de edad</h1>
-        <p>Ingresa tu edad</p>
-        <input type="number" id="edad" name="edad">
-        <button onclick="calcular()">Calcular</button>
-    </div>
     <script>
-        //Si es mayor de edad mostrar un mensaje ingresando mi edad
-        function calcular(){
-            var edad = document.getElementById('edad').value;
-            if(edad >= 18){
-                alert('Eres mayor de edad');
-            }else{
-                alert('Eres menor de edad');
-            }
-        }
+        //Ejemplo de array
+        var frutas = ["Manzana", "Plátano", "Cereza", "Fresa"];
+        console.log(frutas);
+        console.log(frutas[0]);
+        console.log(frutas[1]);
     </script>
-    
+
 </body>
 </html>
