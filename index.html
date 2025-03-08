@@ -6,24 +6,48 @@
     <title>Clases Certus</title>
 </head>
 <body>
-    <input type="text" id="numero" placeholder="Ingrese un numero">
-    <button onclick="variables()">Verificar</button>
+ 
     <script>
-
-        function variables(){
-            var numero= document.getElementById("numero").value;
-            if(numero<=2){
-                document.write("El numero es menor o igual a 2");
-            }else if(numero<=4){
-                    document.write("El numero es menor o igual a 4");
-            }else if(numero<=6){
-                    document.write("El numero es menor o igual a 6");
-            }else if(numero<=8){
-                    document.write("El numero es menor o igual a 8");
-            }else if(numero>10){
-                    document.write("El numero es mayor a 10");
-            }
+        var num = 180;
+        switch(num){
+            case 10:
+                document.write("El número es 10");
+                break;
+            case 20:
+                document.write("El número es 20");
+                break;
+            case 30:
+                document.write("El número es 30");
+                break;
+            case 40:
+                document.write("El número es 40");
+                break;
+            case 50:
+                document.write("El numero es 50");
+                break;
+            case 60:
+                document.write("El numero es 60");
+                break;
+            case 70:
+                document.write("El numero es 70");
+                break;
+            case 80:
+                document.write("El numero es 80");
+                break;
+            case 90:
+                document.write("El numero es 90");
+                break;
+            case 100:
+                document.write("El numero es 100");
+                break; 
+            default:
+                if(num % 90 !==0){
+                    document.write("El numero no es multiplo de 90");
+                }
+                else
+                document.write("El numero es multiplo de 90");
         }
+  
     
     </script>
 
