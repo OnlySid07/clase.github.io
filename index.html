@@ -8,15 +8,16 @@
 <body>
  
     <script>
-
-     var x =100;
-
-     while(x<=500){
-        document.write(x + "<br>");
-        x = x + 1;
-     }
-
-    
+        var x= 0;
+        var datos=[20,30,40];
+        while(x<datos.length){
+            if(datos[x]==20){
+                break;
+            }
+            document.writeln(datos[x]);
+            x++;
+        }
+    document.writeln(datos[x]);
     </script>
 
 </body>
